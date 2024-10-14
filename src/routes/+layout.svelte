@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { version } from '$app/environment';
 	import { page } from '$app/stores';
 	import { PUBLIC_MODE } from '$env/static/public';
 	import ogImageHome from '$lib/assets/images/og/default.jpg';
@@ -74,7 +75,8 @@
 	<link href={meta.canonical} rel="canonical" />
 	<link type="text/plain" rel="author" href="{$page.url.origin}/humans.txt" />
 
-	<meta name="mode" content={PUBLIC_MODE} />
+	<meta name="site:mode" content={PUBLIC_MODE} />
+	<meta name="site:version" content={version} />
 </svelte:head>
 
 {@render children()}
