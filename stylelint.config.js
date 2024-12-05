@@ -23,12 +23,11 @@ export default {
 			{
 				ignoreAtRules: [
 					'tailwind',
+					'plugin',
 					'apply',
 					'layer',
 					'config',
 					'screen',
-					'mixin',
-					'define-mixin',
 					'theme',
 					'utility',
 					'variant',
@@ -47,7 +46,7 @@ export default {
 		'custom-property-empty-line-before': null,
 		'comment-empty-line-before': null,
 		'custom-property-pattern': null,
+		'import-notation': null,
 	},
-	ignoreFiles: ['**/app.html', '**/*.template.html'],
+	ignoreFiles: ['**/app.html', '**/*.template.html', '**/*.md.svelte', 'dist/**/*'],
 };
-

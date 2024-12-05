@@ -13,7 +13,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	preprocess: [externalLink(['client.elevatecode.io', 'elevatecode.io']), vitePreprocess()],
+	preprocess: [externalLink(['quansat.dev']), vitePreprocess()],
 	kit: {
 		adapter: adapter({
 			routes: {
@@ -34,4 +34,3 @@ const config = {
 };
 
 export default config;
-
