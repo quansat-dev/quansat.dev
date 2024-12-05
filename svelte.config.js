@@ -15,6 +15,9 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const config = {
 	preprocess: [externalLink(['quansat.dev']), vitePreprocess()],
 	kit: {
+		prerender: {
+			origin: 'https://quansat.dev',
+		},
 		adapter: adapter({
 			routes: {
 				include: ['/*'],
