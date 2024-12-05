@@ -2,7 +2,7 @@
 	import { version } from '$app/environment';
 	import { page } from '$app/stores';
 	import { PUBLIC_MODE } from '$env/static/public';
-	import ogImageHome from '$lib/assets/images/og/default.jpg';
+	import ogImageHome from '$lib/assets/images/og/default.jpg?url';
 
 	import '../lib/styles/app.css';
 

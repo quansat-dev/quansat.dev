@@ -1,4 +1,1 @@
-/* stylelint-disable import-notation */
-@layer theme, base, utilities;
-
 @import 'tailwindcss';
